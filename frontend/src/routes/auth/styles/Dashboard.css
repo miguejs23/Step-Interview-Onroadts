@@ -1,0 +1,65 @@
+.dashboard {
+	max-width: 1000px;
+  width: 90%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	min-height: max-content;
+	padding: 50px 20px;
+}
+/*--------------------*/
+.dashboard .aside {
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+}
+.aside .nav {
+	padding: 0;
+}
+.aside .nav .nav-item {
+	border: 1px solid rgba(97, 218, 251, 1);
+	margin: 15px 15px;
+	border-radius: 15%;
+}
+.aside .nav .nav-item:hover {
+	transition: background-color .3s linear;
+	background-color: rgba(97, 218, 251, 1);
+}
+.aside .nav .nav-item > a {
+	display: block;
+	padding: 10px;
+	color: #ddd;
+	font-weight: bolder;
+}
+.aside .nav .nav-item:hover > a {
+	color: #000;
+}
+/*--------------------*/
+.dashboard .main {
+	flex-grow: 1;
+}
+.main .title {
+	position: relative;
+	color: #fffd;
+}
+.main .title::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 85%;
+	height: 1%;
+	background-color: rgba(97, 218, 251, .6);
+	animation: under 3s;
+}
+
+@keyframes under {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 85%;
+	}
+}

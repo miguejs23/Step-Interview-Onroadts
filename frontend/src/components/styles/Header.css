@@ -1,0 +1,45 @@
+.ctn-header {
+  width: 100%;
+}
+/*=========================*/
+/* Styles for header element
+/*=========================*/
+.header {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* Styles for logo */
+.header .logo {
+  font-size: 1.5em;
+}
+/* Styles for navigation */
+.header .nav {
+  display: flex;
+}
+.header .nav .nav-item {
+  margin-left: 20px;
+}
+.header .nav .ctn_sign-up {
+  border: 1px solid #61dafb;
+}
+.header .nav .ctn_sign-up:hover {
+  transition: background-color .3s linear;
+  background-color: #61dafb;
+}
+/* Styles for a tag */
+.header .nav .nav-item > a {
+  display: block;
+  padding: 5px 15px;
+  font-size: 1.15em;
+}
+.header .nav .ctn_sign-up:hover > a {
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
